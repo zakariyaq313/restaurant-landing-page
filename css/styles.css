@@ -17,4 +17,99 @@ body {
   backdrop-filter: blur(2rem);
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+button:focus {
+  outline: none;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.button {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2rem;
+}
+
+.button-active {
+  transition: all 0.3s;
+}
+.button-active:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
+}
+.button-active:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.food-icons {
+  width: 3rem;
+}
+
+header {
+  padding: 5rem;
+}
+
+.brand h3 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.brand p {
+  font-size: 0.9rem;
+}
+
+.header-section {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  justify-items: stretch;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: space-between;
+  width: 16rem;
+  border-bottom-right-radius: 0;
+  margin-top: 4rem;
+}
+.menu-button span {
+  line-height: 0;
+  font-size: 3rem;
+}
+
+.food-categories {
+  margin-top: 5rem;
+}
+.food-categories button {
+  padding: 1rem 1.2rem;
+  margin: 0 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.8rem;
+}
+.food-categories button:focus {
+  background-color: #000000;
+}
+.food-categories button:focus > img {
+  filter: invert(1);
+}
+
+.header-image {
+  justify-self: end;
+}
+.header-image img {
+  width: 55rem;
+  justify-self: end;
+}
+
 /*# sourceMappingURL=styles.css.map */

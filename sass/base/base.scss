@@ -19,3 +19,13 @@ body{
     height: 400vh;
     backdrop-filter: blur(2rem);
 }
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    &:focus{
+        outline: none;
+    }
+}

@@ -1,0 +1,63 @@
+header {
+    padding: 5rem;
+}
+
+.brand {
+    h3 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+}
+
+.header-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-items: stretch;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.menu-button{
+    display: flex;
+    justify-content: space-between;
+    width: 16rem;
+    border-bottom-right-radius: 0;
+    margin-top: 4rem;
+
+    span{
+        line-height: 0;
+        font-size: 3rem;
+    }
+}
+
+.food-categories{
+    margin-top: 5rem;
+
+    button{
+        padding: 1rem 1.2rem;
+        margin: 0 1rem;
+        background-color: rgba(255,255,255, .7);
+        border-radius: .8rem;
+
+        &:focus{
+            background-color: #000000;
+        }
+
+        &:focus > img{
+            filter: invert(1);
+        }
+    }    
+}
+
+.header-image {
+    justify-self: end;
+    
+    img {
+        width: 55rem;
+        justify-self: end;
+    }
+}

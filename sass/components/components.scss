@@ -1,0 +1,33 @@
+.heading-primary {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.heading-secondary {}
+
+.button {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+}
+
+.button-active {
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .6);
+    }
+
+    &:active{
+        transform: translateY(0);
+        box-shadow: none;
+    }
+}
+
+.food-icons {
+    width: 3rem;
+}
