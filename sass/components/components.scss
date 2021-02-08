@@ -3,7 +3,14 @@
     font-weight: 900;
 }
 
-.heading-secondary {}
+.heading-secondary {
+
+}
+
+.heading-tertiary{
+    font-size: 3rem;
+    font-weight: 900;
+}
 
 .button {
     background-color: #000000;
@@ -30,4 +37,64 @@
 
 .food-icons {
     width: 3rem;
+}
+
+.menu-item-image{
+    width: 20rem;
+    margin-top: -50%;
+}
+
+.menu-item-details{
+    h4{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    p{
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-top: 5px;
+    }
+
+    h5{
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-top: 5px;
+    }
+}
+
+.like-button{
+    background-color: rgba(0, 0, 0, .2);
+    padding: 1rem;
+    border-radius: 100%;
+    line-height: 0;
+    transition: all .2s;
+
+    img{
+        width: 2rem;
+    }
+
+    &:hover, &:focus{
+        background-color: #000000;
+    }
+
+    &:hover > img,
+    &:focus > img{
+        filter: invert(1);
+    }
+}
+
+.add-to-cart{
+    position: absolute;
+    right: 2rem;
+    bottom: -3rem;
+    background-color: #000000;
+    padding: 1rem 1.5rem 2rem 1rem;
+    border-radius: .5rem .5rem 4rem 1.5rem;
+    line-height: 0;
+
+    img{
+        width: 3rem;
+        filter: invert(1);
+    }
 }

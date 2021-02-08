@@ -31,6 +31,11 @@ button:focus {
   font-weight: 900;
 }
 
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
 .button {
   background-color: #000000;
   color: #ffffff;
@@ -56,11 +61,62 @@ button:focus {
   width: 3rem;
 }
 
+.menu-item-image {
+  width: 20rem;
+  margin-top: -50%;
+}
+
+.menu-item-details h4 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.menu-item-details p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.menu-item-details h5 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 5px;
+}
+
+.like-button {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 100%;
+  line-height: 0;
+  transition: all 0.2s;
+}
+.like-button img {
+  width: 2rem;
+}
+.like-button:hover, .like-button:focus {
+  background-color: #000000;
+}
+.like-button:hover > img, .like-button:focus > img {
+  filter: invert(1);
+}
+
+.add-to-cart {
+  position: absolute;
+  right: 2rem;
+  bottom: -3rem;
+  background-color: #000000;
+  padding: 1rem 1.5rem 2rem 1rem;
+  border-radius: 0.5rem 0.5rem 4rem 1.5rem;
+  line-height: 0;
+}
+.add-to-cart img {
+  width: 3rem;
+  filter: invert(1);
+}
+
 header {
   padding: 5rem;
 }
 
-.brand h3 {
+.brand h4 {
   font-size: 2rem;
   font-weight: 900;
 }
@@ -110,6 +166,40 @@ header {
 .header-image img {
   width: 55rem;
   justify-self: end;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10rem;
+  place-items: center;
+}
+.section-1 .menu-items {
+  display: flex;
+}
+
+.menu-item-card-1 {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  border-radius: 4rem;
+  padding: 4rem 3rem;
+  margin: 0 2rem;
+}
+
+.menu-item-type-1 {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.about-us {
+  width: 60%;
+}
+.about-us p {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  line-height: 1.6;
 }
 
 /*# sourceMappingURL=styles.css.map */

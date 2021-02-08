@@ -1,0 +1,35 @@
+.section-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10rem;
+    place-items: center;
+
+    .menu-items{
+        display: flex;
+    }
+}
+
+.menu-item-card-1{
+    background-color: rgba(255,255,255, .2);
+    position: relative;
+    border-radius: 4rem;
+    padding: 4rem 3rem;
+    margin: 0 2rem;
+}
+
+.menu-item-type-1{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.about-us{
+    width: 60%;
+
+    p{
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        line-height: 1.6;
+    }
+}
