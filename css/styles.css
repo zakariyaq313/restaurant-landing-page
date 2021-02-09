@@ -36,6 +36,15 @@ button:focus {
   font-weight: 900;
 }
 
+.description {
+  width: 60%;
+}
+.description p {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  line-height: 1.6;
+}
+
 .button {
   background-color: #000000;
   color: #ffffff;
@@ -193,13 +202,14 @@ header {
   margin-top: 2rem;
 }
 
-.about-us {
-  width: 60%;
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
 }
-.about-us p {
-  font-size: 1.2rem;
-  margin-top: 3rem;
-  line-height: 1.6;
+
+.pasta-image img {
+  width: 40rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
