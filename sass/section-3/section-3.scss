@@ -1,0 +1,23 @@
+.section-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 10rem;
+}
+
+.app-download{
+
+}
+
+.app-download-links{
+    margin-top: 2rem;
+}
+
+.download-button{
+    width: 16rem;
+    margin-right: 2rem;
+}
+
+.app-screenshot{
+    width: 60rem;
+}
