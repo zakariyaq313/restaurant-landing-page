@@ -49,40 +49,80 @@
     width: 3rem;
 }
 
-.menu-item-image{
-    width: 20rem;
-    margin-top: -50%;
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-card{
+    background-color: rgba(255,255,255, .2);
+    position: relative;
+
+    &-1{
+        padding: 4rem 3rem;
+        margin: 0 2rem;
+        border-radius: 4rem;
+    }
+
+    &-2{
+        margin-top: 5rem;
+        padding: 2rem 1rem;
+        width: 12rem;
+        border-radius: 2rem;
+    }
 }
 
 .menu-item-details{
     h4{
-        font-size: 2rem;
         font-weight: 900;
     }
 
+    h5{
+        font-weight: 900;
+        margin-top: 5px;
+    }
+
     p{
-        font-size: 1.4rem;
         font-weight: 300;
         margin-top: 5px;
     }
 
-    h5{
-        font-size: 1.5rem;
-        font-weight: 900;
-        margin-top: 5px;
+    // For card type 1
+    &-1{
+        h4{
+            font-size: 2rem;
+        }
+
+        h5{
+            font-size: 1.5rem;
+        }
+
+        p{
+            font-size: 1.4rem;
+        }
+    }
+
+    // For card type 2
+    &-2{
+        h4{
+            font-size: 1.5rem;
+        }
+
+        h5{
+            font-size: 1.2rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
     }
 }
 
 .like-button{
     background-color: rgba(0, 0, 0, .2);
-    padding: 1rem;
     border-radius: 100%;
     line-height: 0;
     transition: all .2s;
-
-    img{
-        width: 2rem;
-    }
 
     &:hover, &:focus{
         background-color: #000000;
@@ -91,6 +131,25 @@
     &:hover > img,
     &:focus > img{
         filter: invert(1);
+    }
+
+    &-1{
+        padding: 1rem;
+
+        img{
+            width: 2rem;
+        }
+    }
+
+    &-2{
+        padding: 0.6rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+
+        img{
+            width: 1.5rem;
+        }
     }
 }
 

@@ -70,41 +70,83 @@ button:focus {
   width: 3rem;
 }
 
-.menu-item-image {
-  width: 20rem;
-  margin-top: -50%;
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+.menu-item-card-1 {
+  padding: 4rem 3rem;
+  margin: 0 2rem;
+  border-radius: 4rem;
+}
+.menu-item-card-2 {
+  margin-top: 5rem;
+  padding: 2rem 1rem;
+  width: 12rem;
+  border-radius: 2rem;
 }
 
 .menu-item-details h4 {
-  font-size: 2rem;
   font-weight: 900;
 }
+.menu-item-details h5 {
+  font-weight: 900;
+  margin-top: 5px;
+}
 .menu-item-details p {
-  font-size: 1.4rem;
   font-weight: 300;
   margin-top: 5px;
 }
-.menu-item-details h5 {
+.menu-item-details-1 h4 {
+  font-size: 2rem;
+}
+.menu-item-details-1 h5 {
   font-size: 1.5rem;
-  font-weight: 900;
-  margin-top: 5px;
+}
+.menu-item-details-1 p {
+  font-size: 1.4rem;
+}
+.menu-item-details-2 h4 {
+  font-size: 1.5rem;
+}
+.menu-item-details-2 h5 {
+  font-size: 1.2rem;
+}
+.menu-item-details-2 p {
+  font-size: 1rem;
 }
 
 .like-button {
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 1rem;
   border-radius: 100%;
   line-height: 0;
   transition: all 0.2s;
-}
-.like-button img {
-  width: 2rem;
 }
 .like-button:hover, .like-button:focus {
   background-color: #000000;
 }
 .like-button:hover > img, .like-button:focus > img {
   filter: invert(1);
+}
+.like-button-1 {
+  padding: 1rem;
+}
+.like-button-1 img {
+  width: 2rem;
+}
+.like-button-2 {
+  padding: 0.6rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.like-button-2 img {
+  width: 1.5rem;
 }
 
 .add-to-cart {
@@ -141,14 +183,14 @@ header {
   padding: 0 5rem;
 }
 
-.menu-button {
+.view-menu {
   display: flex;
   justify-content: space-between;
   width: 16rem;
   border-bottom-right-radius: 0;
   margin-top: 4rem;
 }
-.menu-button span {
+.view-menu span {
   line-height: 0;
   font-size: 3rem;
 }
@@ -159,7 +201,7 @@ header {
 .food-categories button {
   padding: 1rem 1.2rem;
   margin: 0 1rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 0.8rem;
 }
 .food-categories button:focus {
@@ -180,19 +222,8 @@ header {
 .section-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 10rem;
   place-items: center;
-}
-.section-1 .menu-items {
-  display: flex;
-}
-
-.menu-item-card-1 {
-  background-color: rgba(255, 255, 255, 0.2);
-  position: relative;
-  border-radius: 4rem;
-  padding: 4rem 3rem;
-  margin: 0 2rem;
+  padding: 10rem;
 }
 
 .menu-item-type-1 {
@@ -200,6 +231,11 @@ header {
   align-items: start;
   justify-content: space-between;
   margin-top: 2rem;
+}
+
+.menu-item-image-1 {
+  width: 20rem;
+  margin-top: -50%;
 }
 
 .section-2 {
@@ -239,10 +275,6 @@ header {
   padding: 10rem;
 }
 
-.app-download {
-  padding: 2rem;
-}
-
 .app-download-links {
   margin-top: 2rem;
 }
@@ -252,8 +284,55 @@ header {
   margin-right: 2rem;
 }
 
-.app-screenshot {
-  width: 60rem;
+.app-screenshots {
+  display: flex;
+}
+
+.app-screen {
+  height: 56rem;
+  width: 30rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3rem;
+  margin: 0 3rem;
+  padding: 2rem;
+  position: relative;
+}
+.app-screen > h4 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 3rem;
+}
+
+.food-categories-2 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.food-categories-2 button {
+  padding: 0.5rem 0.7rem;
+  margin: 0;
+}
+.food-categories-2 .food-icons {
+  width: 2.5rem;
+}
+
+.menu-button {
+  display: inline-block;
+  width: 2rem;
+  height: 2px;
+  background-color: #000000;
+}
+.menu-button::after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: inherit;
+}
+
+.menu-item-image-2 {
+  width: 10rem;
+  margin-top: -50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
