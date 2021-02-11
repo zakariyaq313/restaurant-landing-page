@@ -239,6 +239,10 @@ header {
   padding: 10rem;
 }
 
+.app-download {
+  padding: 2rem;
+}
+
 .app-download-links {
   margin-top: 2rem;
 }
