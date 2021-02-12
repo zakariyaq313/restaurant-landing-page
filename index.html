@@ -14,10 +14,10 @@
 
     <!-- Header section -->
     <header>
-        <span class="brand">
+        <div class="brand">
             <h4>Taste</h4>
             <p>Restaurant and BBQ</p>
-        </span>
+        </div>
 
         <div class="header-section">
             <div>
@@ -33,7 +33,7 @@
             </div>
 
             <div class="header-image">
-                <img src="images/pasta-spaghetti.png" alt="Egg curry">
+                <img src="images/pasta-spaghetti.png" alt="Pasta spaghetti">
             </div>
         </div>
     </header>
@@ -41,50 +41,50 @@
     <main>
         <!-- Section 1 -->
         <section class="section-1">
-            <div class="menu-items">
+            <div class="menu-items-column">
                 <div class="menu-item-card menu-item-card-1">
-                    <img src="images/egg-curry.png" class="menu-item-image-1" alt="Crab Ramen">
+                    <img src="images/egg-curry.png" class="menu-item-image-1" alt="Egg curry">
 
                     <div class="menu-item-type-1">
-                        <span class="menu-item-details menu-item-details-1">
-                            <h4>Eggs & Sausage</h4>
+                        <div class="menu-item-details menu-item-details-1">
+                            <h3>Eggs & Sausage</h3>
                             <p>Spicy with garlic</p>
-                            <h5>$ 24.00</h5>
-                        </span>
+                            <h4>$ 24.00</h4>
+                        </div>
 
                         <button class="like-button like-button-1">
                             <img src="images/like.svg" alt="Like">
                         </button>
                     </div>
 
-                    <button class="add-to-cart">
+                    <button class="cart-button">
                         <img src="images/shopping-cart.svg" alt="Shopping cart">
                     </button>
                 </div>
 
                 <div class="menu-item-card menu-item-card-1">
-                    <img src="images/fried-chicken.png" class="menu-item-image-1" alt="Crab Ramen">
+                    <img src="images/fried-chicken.png" class="menu-item-image-1" alt="Fried Chicken">
 
                     <div class="menu-item-type-1">
-                        <span class="menu-item-details menu-item-details-1">
-                            <h4>Fried Chicken</h4>
+                        <div class="menu-item-details menu-item-details-1">
+                            <h3>Fried Chicken</h3>
                             <p>Real chicken</p>
-                            <h5>$ 12.00</h5>
-                        </span>
+                            <h4>$ 12.00</h4>
+                        </div>
 
                         <button class="like-button like-button-1">
                             <img src="images/like.svg" alt="Like">
                         </button>
                     </div>
 
-                    <button class="add-to-cart">
+                    <button class="cart-button">
                         <img src="images/shopping-cart.svg" alt="Shopping cart">
                     </button>
                 </div>
             </div>
 
             <div class="description">
-                <h3 class="heading-tertiary">We have delicious food <br>
+                <h3 class="heading-secondary">We have delicious food <br>
                     Tastiest food in town!
                 </h3>
                 <p>
@@ -98,7 +98,7 @@
         <!-- Section 2 -->
         <section class="section-2">
             <div class="description">
-                <h3 class="heading-tertiary">
+                <h3 class="heading-secondary">
                     Special offers and discounts available on select items!
                 </h3>
                 <p>
@@ -120,10 +120,10 @@
         <section class="section-3">
 
             <div class="app-screenshots">
-
+                <!-- First app-preview -->
                 <div class="app-screen">
                     <span class="menu-button"></span>
-                    <h4>Delicious Food</h4>
+                    <h3>Delicious Food</h3>
                     <p>We make fresh and healthy food</p>
 
                     <div class="food-categories food-categories-2">
@@ -133,16 +133,16 @@
                         <button><img src="images/ice-cream.svg" class="food-icons" title="Ice-Cream" alt="Ice-cream"></button>
                     </div>
 
-                    <div class="menu-items">
+                    <div class="menu-items-column">
                         <div class="menu-item-card menu-item-card-2">
-                            <img src="images/fried-chicken.png" class="menu-item-image-2" alt="Crab Ramen">
+                            <img src="images/fried-chicken.png" class="menu-item-image-2" alt="Fried Chicken">
 
                             <div class="menu-item-type-2">
-                                <span class="menu-item-details menu-item-details-2">
-                                    <h4>Fried Chicken</h4>
+                                <div class="menu-item-details menu-item-details-2">
+                                    <h3>Fried Chicken</h3>
                                     <p>Real chicken</p>
-                                    <h5>$ 12.00</h5>
-                                </span>
+                                    <h4>$ 12.00</h4>
+                                </div>
 
                                 <button class="like-button like-button-2">
                                     <img src="images/like.svg" alt="Like">
@@ -151,14 +151,14 @@
                         </div>
 
                         <div class="menu-item-card menu-item-card-2">
-                            <img src="images/fried-chicken.png" class="menu-item-image-2" alt="Crab Ramen">
+                            <img src="images/chicken-nuggets.png" class="menu-item-image-2" alt="Chicken nuggets">
 
                             <div class="menu-item-type-2">
-                                <span class="menu-item-details menu-item-details-2">
-                                    <h4>Fried Chicken</h4>
+                                <div class="menu-item-details menu-item-details-2">
+                                    <h3>Chicken Nuggets</h3>
                                     <p>Real chicken</p>
-                                    <h5>$ 12.00</h5>
-                                </span>
+                                    <h4>$ 12.00</h4>
+                                </div>
 
                                 <button class="like-button like-button-2">
                                     <img src="images/like.svg" alt="Like">
@@ -167,16 +167,60 @@
                         </div>
                     </div>
 
+                    <div class="menu-item-card menu-item-card-horizontal">
+                        <div class="menu-item-type-horizontal">
+                            <div class="menu-item-details menu-item-details-horizontal">
+                                <h3>Chicken Nuggets</h3>
+                                <p>Eggs to tomato and sauce</p>
+                                <h4>$ 12.00</h4>
+                            </div>
+                        </div>
+
+                        <img src="images/pasta-spaghetti.png" class="menu-item-image-horizontal" alt="Chicken nuggets">
+                    </div>
+
+                    <div class="navigation-buttons">
+                        <button><img src="images/home.svg" alt="Home screen icon"></button>
+                        <button><img src="images/wallet.svg" alt="Wallet icon"></button>
+                        <button><img src="images/chat.svg" alt="Chat icon"></button>
+                        <button><img src="images/user.svg" alt="User icon"></button>
+                    </div>
                 </div>
 
+                <!-- Second app-preview -->
                 <div class="app-screen">
+                    <div class="menu-button-2">
+                        <img src="images/left-arrow.svg" alt="Back button">
+                        <img src="images/menu-dots.svg" alt="More options button">
+                    </div>
 
+                    <img src="images/pasta-spaghetti.png" class="menu-item-image-vertical" alt="Pasta spaghetti">
+
+                    <div class="menu-item-type-vertical">
+                        <div class="menu-item-details menu-item-details-vertical">
+                            <h3>Pasta Spaghetti</h3>
+                            <p>Pasta spaghetti with tomato and cucumbers our chef's special healthy and fat free dish for those who want to lose weight.</p>
+                            <div class="price">
+                                <p>Total Price</p>
+                                <h4>$ 12.00</h4>
+                            </div>
+                        </div>
+
+                        <div class="clock">
+                            <img src="images/clock.svg" alt="Clock icon">
+                            <h5>25 Mins</h5>
+                        </div>
+
+                        <button class="button button-active add-to-cart">Add to cart
+                            <span><!-- Plus button made with CSS --></span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <div class="app-download">
                 <div class="description">
-                    <h3 class="heading-tertiary">
+                    <h3 class="heading-secondary">
                         App is available
                     </h3>
                     <p>
@@ -192,6 +236,10 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        
+    </footer>
 
     <!-- <a href='https://www.freepik.com/photos/food'>Food photo created by jcomp - www.freepik.com</a> -->
     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->

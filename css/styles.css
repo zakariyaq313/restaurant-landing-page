@@ -26,25 +26,6 @@ button:focus {
   outline: none;
 }
 
-.heading-primary {
-  font-size: 5rem;
-  font-weight: 900;
-}
-
-.heading-tertiary {
-  font-size: 3rem;
-  font-weight: 900;
-}
-
-.description {
-  width: 60%;
-}
-.description p {
-  font-size: 1.2rem;
-  margin-top: 3rem;
-  line-height: 1.6;
-}
-
 .button {
   background-color: #000000;
   color: #ffffff;
@@ -70,9 +51,10 @@ button:focus {
   width: 3rem;
 }
 
-.menu-items {
+.menu-items-column {
   display: flex;
   justify-content: space-between;
+  align-items: start;
 }
 
 .menu-item-card {
@@ -86,39 +68,17 @@ button:focus {
 }
 .menu-item-card-2 {
   margin-top: 5rem;
-  padding: 2rem 1rem;
+  padding: 1.4rem 1rem;
   width: 12rem;
-  border-radius: 2rem;
+  border-radius: 1.6rem;
 }
-
-.menu-item-details h4 {
-  font-weight: 900;
-}
-.menu-item-details h5 {
-  font-weight: 900;
-  margin-top: 5px;
-}
-.menu-item-details p {
-  font-weight: 300;
-  margin-top: 5px;
-}
-.menu-item-details-1 h4 {
-  font-size: 2rem;
-}
-.menu-item-details-1 h5 {
-  font-size: 1.5rem;
-}
-.menu-item-details-1 p {
-  font-size: 1.4rem;
-}
-.menu-item-details-2 h4 {
-  font-size: 1.5rem;
-}
-.menu-item-details-2 h5 {
-  font-size: 1.2rem;
-}
-.menu-item-details-2 p {
-  font-size: 1rem;
+.menu-item-card-horizontal {
+  margin-top: 1.5rem;
+  border-radius: 1.6rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .like-button {
@@ -127,10 +87,10 @@ button:focus {
   line-height: 0;
   transition: all 0.2s;
 }
-.like-button:hover, .like-button:focus {
+.like-button:hover {
   background-color: #000000;
 }
-.like-button:hover > img, .like-button:focus > img {
+.like-button:hover > img {
   filter: invert(1);
 }
 .like-button-1 {
@@ -149,7 +109,14 @@ button:focus {
   width: 1.5rem;
 }
 
-.add-to-cart {
+.favourite {
+  background-color: #000000;
+}
+.favourite > img {
+  filter: invert(1);
+}
+
+.cart-button {
   position: absolute;
   right: 2rem;
   bottom: -3rem;
@@ -158,13 +125,9 @@ button:focus {
   border-radius: 0.5rem 0.5rem 4rem 1.5rem;
   line-height: 0;
 }
-.add-to-cart img {
+.cart-button img {
   width: 3rem;
   filter: invert(1);
-}
-
-header {
-  padding: 5rem;
 }
 
 .brand h4 {
@@ -173,6 +136,70 @@ header {
 }
 .brand p {
   font-size: 0.9rem;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.description {
+  width: 60%;
+}
+.description p {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  line-height: 1.6;
+}
+
+.menu-item-details h3 {
+  font-weight: 900;
+}
+.menu-item-details h4 {
+  font-weight: 900;
+  margin-top: 5px;
+}
+.menu-item-details p {
+  font-weight: 300;
+  margin-top: 5px;
+}
+.menu-item-details-1 h3 {
+  font-size: 2rem;
+}
+.menu-item-details-1 h4 {
+  font-size: 1.5rem;
+}
+.menu-item-details-1 p {
+  font-size: 1.4rem;
+}
+.menu-item-details-2 h3, .menu-item-details-horizontal h3 {
+  font-size: 1.3rem;
+}
+.menu-item-details-2 h4, .menu-item-details-horizontal h4 {
+  font-size: 1.2rem;
+}
+.menu-item-details-2 p, .menu-item-details-horizontal p {
+  font-size: 1rem;
+}
+.menu-item-details-vertical h3 {
+  font-size: 2rem;
+}
+.menu-item-details-vertical h4 {
+  font-size: 1.6rem;
+}
+.menu-item-details-vertical p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+header {
+  padding: 5rem;
 }
 
 .header-section {
@@ -272,7 +299,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  padding: 10rem;
+  justify-items: end;
 }
 
 .app-download-links {
@@ -289,7 +316,7 @@ header {
 }
 
 .app-screen {
-  height: 56rem;
+  height: 58rem;
   width: 30rem;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3rem;
@@ -297,10 +324,10 @@ header {
   padding: 2rem;
   position: relative;
 }
-.app-screen > h4 {
+.app-screen > h3 {
   font-size: 2rem;
   font-weight: 900;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .food-categories-2 {
@@ -320,7 +347,8 @@ header {
   display: inline-block;
   width: 2rem;
   height: 2px;
-  background-color: #000000;
+  background-color: #000;
+  margin-top: 1.5rem;
 }
 .menu-button::after {
   content: "";
@@ -330,9 +358,108 @@ header {
   background-color: inherit;
 }
 
+.menu-button-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.menu-button-2 img {
+  height: 1.5rem;
+}
+
+.menu-item-type-2 {
+  margin-top: 1rem;
+}
+
+.menu-item-type-vertical {
+  margin-top: 4rem;
+  position: relative;
+}
+
 .menu-item-image-2 {
   width: 10rem;
   margin-top: -50%;
+}
+
+.menu-item-image-horizontal {
+  width: 10rem;
+}
+
+.menu-item-image-vertical {
+  margin-top: 1rem;
+  width: 25rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+}
+.navigation-buttons button {
+  padding: 1rem;
+  line-height: 0;
+  border-radius: 100%;
+}
+.navigation-buttons button:first-of-type {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.navigation-buttons img {
+  width: 1.6rem;
+  filter: invert(1);
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+.clock img {
+  width: 1.2rem;
+}
+.clock h5 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-left: 5px;
+}
+
+.price {
+  margin-top: 4rem;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 0;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.add-to-cart span {
+  height: 3rem;
+  width: 3rem;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-left: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-to-cart span::after, .add-to-cart span::before {
+  content: "";
+  height: 1rem;
+  width: 2px;
+  background-color: #000;
+  position: absolute;
+}
+.add-to-cart span::after {
+  transform: rotate(90deg);
 }
 
 /*# sourceMappingURL=styles.css.map */

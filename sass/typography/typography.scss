@@ -1,0 +1,84 @@
+.brand {
+    h4 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+}
+
+.heading-primary {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.heading-secondary {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.description{
+    width: 60%;
+    p{
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        line-height: 1.6;
+    }
+}
+
+.menu-item-details{
+    h3{
+        font-weight: 900;
+    }
+    h4{
+        font-weight: 900;
+        margin-top: 5px;
+    }
+    p{
+        font-weight: 300;
+        margin-top: 5px;
+    }
+
+    // For card type 1
+    &-1{
+        h3{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+    }
+
+    // For card type 2 and horizontal
+    &-2, &-horizontal{
+        h3{
+            font-size: 1.3rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    // For card type vertical
+    &-vertical{
+        h3{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 2rem;
+        }
+    }
+}
