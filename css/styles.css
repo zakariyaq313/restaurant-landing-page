@@ -1,3 +1,7 @@
+html {
+  --font: 2rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,10 +15,10 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/2.jpg");
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/3.jpg");
   background-size: cover;
-  height: 400vh;
   backdrop-filter: blur(2rem);
+  -webkit-text-size-adjust: 100%;
 }
 
 button {
@@ -24,6 +28,13 @@ button {
 }
 button:focus {
   outline: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  color: black;
 }
 
 .button {
@@ -136,6 +147,7 @@ button:focus {
 }
 .brand p {
   font-size: 0.9rem;
+  margin-top: 5px;
 }
 
 .heading-primary {
@@ -155,6 +167,19 @@ button:focus {
   font-size: 1.2rem;
   margin-top: 3rem;
   line-height: 1.6;
+}
+
+.discount-tag h3 {
+  margin: auto;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.app-screen > h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 1.5rem;
 }
 
 .menu-item-details h3 {
@@ -198,6 +223,24 @@ button:focus {
   margin-top: 2rem;
 }
 
+.clock h5 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-left: 5px;
+}
+
+.contact-us a {
+  font-size: 1.4rem;
+}
+
+.links-group h3 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.links-group > p, .links-group > a {
+  font-size: 1.2rem;
+}
+
 header {
   padding: 5rem;
 }
@@ -213,13 +256,17 @@ header {
 .view-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 16rem;
   border-bottom-right-radius: 0;
   margin-top: 4rem;
 }
 .view-menu span {
   line-height: 0;
-  font-size: 3rem;
+}
+.view-menu span img {
+  filter: invert(1);
+  width: 2rem;
 }
 
 .food-categories {
@@ -269,6 +316,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  padding: 0 10rem;
 }
 
 .pasta-image {
@@ -288,18 +336,15 @@ header {
   right: 0;
   display: flex;
 }
-.discount-tag h3 {
-  margin: auto;
-  color: #fff;
-  font-size: 2.2rem;
-  font-weight: 900;
-}
 
 .section-3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
   place-items: center;
   justify-items: end;
+  margin-top: 10rem;
+  padding: 0 5rem;
 }
 
 .app-download-links {
@@ -320,14 +365,9 @@ header {
   width: 30rem;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3rem;
-  margin: 0 3rem;
+  margin: 0 2rem;
   padding: 2rem;
   position: relative;
-}
-.app-screen > h3 {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-top: 1.5rem;
 }
 
 .food-categories-2 {
@@ -421,11 +461,6 @@ header {
 .clock img {
   width: 1.2rem;
 }
-.clock h5 {
-  font-size: 1.2rem;
-  font-weight: 900;
-  margin-left: 5px;
-}
 
 .price {
   margin-top: 4rem;
@@ -460,6 +495,88 @@ header {
 }
 .add-to-cart span::after {
   transform: rotate(90deg);
+}
+
+footer {
+  padding: 10rem;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid #000;
+}
+.contact-us a {
+  border-top-left-radius: 0;
+  padding: 1.5rem 4.5rem;
+  color: #fff;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: start;
+  margin-top: 8rem;
+}
+
+.links-group {
+  display: flex;
+  flex-direction: column;
+}
+.links-group h3 {
+  margin-bottom: 2rem;
+}
+.links-group > p, .links-group > a {
+  margin: 0.5rem 0;
+}
+
+.copyright a:link, .copyright a:visited {
+  padding-bottom: 1px;
+  padding: 1px;
+  border-bottom: 1px solid #000;
+}
+.copyright a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .description p,
+.menu-item-details-vertical p {
+    line-height: 1.8;
+  }
+}
+@media (max-width: 1100px) {
+  .description {
+    width: 80%;
+  }
+
+  .section-3 {
+    column-gap: 5rem;
+  }
+}
+@media (max-width: 1050px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 950px) {
+  .section-3 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 5rem;
+  }
+
+  .app-screenshots {
+    grid-row-start: 2;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

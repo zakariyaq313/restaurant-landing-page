@@ -10,41 +10,45 @@ header {
     padding: 0 5rem;
 }
 
-.view-menu{
+.view-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 16rem;
     border-bottom-right-radius: 0;
     margin-top: 4rem;
 
-    span{
+    span {
         line-height: 0;
-        font-size: 3rem;
+        img {
+            filter: invert(1);
+            width: 2rem;
+        }
     }
 }
 
-.food-categories{
+.food-categories {
     margin-top: 5rem;
 
-    button{
+    button {
         padding: 1rem 1.2rem;
         margin: 0 1rem;
-        background-color: rgba(255,255,255, .4);
+        background-color: rgba(255, 255, 255, .4);
         border-radius: .8rem;
 
-        &:focus{
+        &:focus {
             background-color: #000000;
         }
 
-        &:focus > img{
+        &:focus>img {
             filter: invert(1);
         }
-    }    
+    }
 }
 
 .header-image {
     justify-self: end;
-    
+
     img {
         width: 55rem;
         justify-self: end;

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    padding: 0 10rem;
 }
 
 .pasta-image {
@@ -21,11 +22,4 @@
     top: 0;
     right: 0;
     display: flex;
-
-    h3{
-        margin: auto;
-        color: #fff;
-        font-size: 2.2rem;
-        font-weight: 900;
-    }
 }

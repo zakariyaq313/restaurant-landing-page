@@ -14,10 +14,10 @@ body{
     background-image: linear-gradient(to right, 
                     rgba(255,255,255, .6), 
                     rgba(255,255,255, .6)), 
-                    url("../images/2.jpg");
+                      url("../images/3.jpg");
     background-size: cover;
-    height: 400vh;
     backdrop-filter: blur(2rem);
+    -webkit-text-size-adjust: 100%;
 }
 
 button{
@@ -28,4 +28,11 @@ button{
     &:focus{
         outline: none;
     }
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    color: black;
 }
