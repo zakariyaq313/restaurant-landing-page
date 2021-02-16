@@ -6,7 +6,7 @@
 
     p {
         font-size: var(--font-size-1);
-        margin-top: 5px;
+        margin-top: 0.5rem;
     }
 }
 
@@ -113,8 +113,14 @@
     margin-left: 5px;
 }
 
-.contact-us a {
-    font-size: var(--font-size-5);
+.contact-us {
+    h2{
+        font-size: 3rem;
+    }
+
+    a {
+        font-size: var(--font-size-5);
+    }
 }
 
 .links-group {
