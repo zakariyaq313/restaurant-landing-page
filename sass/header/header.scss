@@ -14,12 +14,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 16rem;
     border-bottom-right-radius: 0;
     margin-top: 4rem;
 
     span {
         line-height: 0;
+        margin-left: 1rem;
+
         img {
             filter: invert(1);
             width: 2rem;

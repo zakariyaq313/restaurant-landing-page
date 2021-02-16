@@ -3,9 +3,10 @@ footer{
 }
 
 .contact-us{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1.4fr;
     align-items: center;
+    justify-items: stretch;
     padding: 3rem 0;
     border-bottom: 1px solid #000;
 
@@ -13,6 +14,8 @@ footer{
         border-top-left-radius: 0;
         padding: 1.5rem 4.5rem;
         color: #fff;
+        width: 20rem;
+        justify-self: end;
     }
 }
 
@@ -43,10 +46,15 @@ footer{
         padding-bottom: 1px;
         padding: 1px;
         border-bottom: 1px solid #000;
+        background-image: linear-gradient(to right, #000, #000);
+        background-size: 0 0;
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        transition: all .4s;
     }
 
     a:hover{
-        background-color: #000;
+        background-size: 100% 100%;
         color: #fff;
     }
 }
