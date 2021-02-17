@@ -1,8 +1,8 @@
-footer{
+footer {
     padding: 10rem;
 }
 
-.contact-us{
+.contact-us {
     display: grid;
     grid-template-columns: 2fr 1.4fr;
     align-items: center;
@@ -10,16 +10,17 @@ footer{
     padding: 3rem 0;
     border-bottom: 1px solid #000;
 
-    a{
+    a {
+        text-align: center;
         border-top-left-radius: 0;
-        padding: 1.5rem 4.5rem;
+        padding: 1.5rem;
         color: #fff;
         width: 20rem;
         justify-self: end;
     }
 }
 
-.footer-links{
+.footer-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -27,22 +28,23 @@ footer{
     margin-top: 8rem;
 }
 
-.links-group{
+.links-group {
     display: flex;
     flex-direction: column;
 
-    h3{
+    h3 {
         margin-bottom: 2rem;
     }
 
-    & > p, 
-    & > a{
+    &>p,
+    &>a {
         margin: 0.5rem 0;
     }
 }
 
-.copyright{
-    a:link, a:visited{
+.copyright {
+    a:link,
+    a:visited {
         padding-bottom: 1px;
         padding: 1px;
         border-bottom: 1px solid #000;
@@ -53,7 +55,7 @@ footer{
         transition: all .4s;
     }
 
-    a:hover{
+    a:hover {
         background-size: 100% 100%;
         color: #fff;
     }

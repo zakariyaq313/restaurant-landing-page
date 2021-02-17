@@ -11,13 +11,30 @@ html{
 
 body{
     font-family: 'Lato', sans-serif;
+    position: relative;
     background-image: linear-gradient(to right, 
                     rgba(255,255,255, .6), 
                     rgba(255,255,255, .6)), 
-                      url("../images/3.jpg");
+                    url("../images/background.jpg");
     background-size: cover;
     backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
     -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@supports not(backdrop-filter: blur(2rem)) {
+    body::after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        filter: blur(2rem);
+    }
 }
 
 button{

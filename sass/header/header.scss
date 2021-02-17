@@ -34,8 +34,12 @@ header {
 
     button {
         padding: 1rem 1.2rem;
-        margin: 0 1rem;
+        margin-right: 2rem;
     }
+}
+
+.food-icons {
+    width: 3rem;
 }
 
 .header-image {
@@ -44,5 +48,7 @@ header {
     img {
         width: 55rem;
         justify-self: end;
+        box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: 0.5);
+        border-radius: 100%;
     }
 }

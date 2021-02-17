@@ -1,3 +1,9 @@
+@media(min-width: 1600px) {
+    html{
+        font-size: 75%;
+    }
+}
+
 @media(max-width: 1200px) {
     html {
         font-size: 55%;
@@ -23,12 +29,12 @@
     html {
         font-size: 50%;
         --font-size-1: 1.2rem;
-        --font-size-2: 1.4rem;
-        --font-size-3: 1.6rem;
+        --font-size-2: 1.5rem;
+        --font-size-4: 1.6rem;
     }
 
     .brand h4{
-        font-size: var(--font-size-10);
+        font-size: var(--font-size-9);
     }
 
     .food-icons{
@@ -70,7 +76,7 @@
     }
 
     .section-1 {
-        margin-bottom: 15rem;
+        margin-bottom: 16rem;
     }
 
     .pasta-image {
@@ -80,7 +86,7 @@
     .section-3 {
         justify-items: center;
         row-gap: 5rem;
-        margin: 10rem auto 0;
+        margin: 12rem auto 0;
     }
 
     .app-download {
@@ -88,10 +94,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-
-        &-links{
-            margin-top: 4rem;
-        }
     }
 
     .download-button{
@@ -103,12 +105,26 @@
         grid-row-start: 2;
     }
 
-    .app-screen {
-        margin: 10rem 0;
-        transform: scale(1.3);
+    .app-screenshots{
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
 
-        &:last-of-type {
-            display: none;
+    .app-screen {
+        margin-top: 12rem;
+        transform: scale(1.4);
+
+        &:last-of-type{
+            margin-top: 28rem;
+        }
+    }
+
+    .menu-item-card-1{
+        transform: scale(1.1);
+        margin: 2rem 0 0;
+
+        &:first-of-type{
+            margin-right: 5rem;
         }
     }
 }
@@ -133,7 +149,7 @@
 
     .links-group-2,
     .links-group-4 {
-        justify-self: end;
+        justify-self: center;
     }
 }
 
@@ -195,9 +211,10 @@
     html {
         font-size: 40%;
         --font-size-1: 1.8rem;
-        --font-size-3: 2rem;
-        --font-size-10: 4rem;
-        --font-size-11: 6rem;
+        --font-size-2: 2rem;
+        --font-size-4: 2.2rem;
+        --font-size-9: 4rem;
+        --font-size-10: 6rem;
     }
 
     .food-icons{
@@ -227,8 +244,7 @@
 
         a{
             width: 90%;
-            text-align: center;
-            font-size: var(--font-size-1);
+            font-size: var(--font-size-2);
             padding: 2rem;
         }
     }
@@ -238,14 +254,10 @@
     html {
         font-size: 35%;
     }
-
-    .menu-item-card-1 {
-        margin: 0 1rem;
-    }
 }
 
 
-@media(max-width: 320px) {
+@media(max-width: 330px) {
     html {
         font-size: 30%;
     }

@@ -1,15 +1,14 @@
 // Sass variables won't work on changing font sizes, since sass
 // variables are assigned only once, so CSS variables to rescue
 html{
-    --font-size-1: 0.9rem;
-    --font-size-2: 1rem;
-    --font-size-3: 1.2rem;
-    --font-size-4: 1.3rem;
-    --font-size-5: 1.4rem;
-    --font-size-6: 1.5rem;
-    --font-size-7: 1.6rem;
-    --font-size-8: 2rem;
-    --font-size-9: 2.2rem;
-    --font-size-10: 3rem;
-    --font-size-11: 5rem;
+    --font-size-1: 1rem;
+    --font-size-2: 1.2rem;
+    --font-size-3: 1.3rem;
+    --font-size-4: 1.4rem;
+    --font-size-5: 1.5rem;
+    --font-size-6: 1.6rem;
+    --font-size-7: 2rem;
+    --font-size-8: 2.2rem;
+    --font-size-9: 3.5rem;
+    --font-size-10: 5rem;
 }

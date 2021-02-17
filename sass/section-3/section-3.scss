@@ -9,7 +9,7 @@
 }
 
 .app-download-links {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .download-button {
@@ -69,6 +69,7 @@
 
     img{
         height: 1.5rem;
+        cursor: pointer;
     }
 }
 
@@ -86,15 +87,21 @@
 .menu-item-image-2 {
     width: 10rem;
     margin-top: -50%;
+    box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: 0.4);
+    border-radius: 100%;
 }
 
 .menu-item-image-horizontal {
     width: 10rem;
+    box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: 0.4);
+    border-radius: 100%;
 }
 
 .menu-item-image-vertical {
     margin-top: 1rem;
     width: 25rem;
+    box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: 0.4);
+    border-radius: 100%;
 }
 
 .navigation-buttons {
@@ -121,16 +128,15 @@
     }
 }
 
+.heading-with-time, 
 .clock{
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 4px;
-    right: 0;
+    justify-content: space-between;
+}
 
-    img{
-        width: 1.2rem;
-    }
+.clock img{
+    width: 1.2rem;
 }
 
 .price{

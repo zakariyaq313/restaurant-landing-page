@@ -1,15 +1,14 @@
 html {
-  --font-size-1: 0.9rem;
-  --font-size-2: 1rem;
-  --font-size-3: 1.2rem;
-  --font-size-4: 1.3rem;
-  --font-size-5: 1.4rem;
-  --font-size-6: 1.5rem;
-  --font-size-7: 1.6rem;
-  --font-size-8: 2rem;
-  --font-size-9: 2.2rem;
-  --font-size-10: 3rem;
-  --font-size-11: 5rem;
+  --font-size-1: 1rem;
+  --font-size-2: 1.2rem;
+  --font-size-3: 1.3rem;
+  --font-size-4: 1.4rem;
+  --font-size-5: 1.5rem;
+  --font-size-6: 1.6rem;
+  --font-size-7: 2rem;
+  --font-size-8: 2.2rem;
+  --font-size-9: 3.5rem;
+  --font-size-10: 5rem;
 }
 
 * {
@@ -25,12 +24,28 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/3.jpg");
+  position: relative;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/background.jpg");
   background-size: cover;
   backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
+@supports not (backdrop-filter: blur(2rem)) {
+  body::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    filter: blur(2rem);
+  }
+}
 button {
   border: none;
   cursor: pointer;
@@ -79,10 +94,6 @@ a:link, a:visited {
   filter: invert(1);
 }
 
-.food-icons {
-  width: 3rem;
-}
-
 .menu-items-column {
   display: flex;
   justify-content: space-between;
@@ -114,16 +125,10 @@ a:link, a:visited {
 }
 
 .like-button {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 100%;
   line-height: 0;
   transition: all 0.2s;
-}
-.like-button:hover {
-  background-color: #000000;
-}
-.like-button:hover > img {
-  filter: invert(1);
 }
 .like-button-1 {
   padding: 1rem;
@@ -139,6 +144,13 @@ a:link, a:visited {
 }
 .like-button-2 img {
   width: 1.5rem;
+}
+
+.like-button-hover:hover {
+  background-color: #000;
+}
+.like-button-hover:hover > img {
+  filter: invert(1);
 }
 
 .favourite {
@@ -163,7 +175,7 @@ a:link, a:visited {
 }
 
 .brand h4 {
-  font-size: var(--font-size-8);
+  font-size: var(--font-size-7);
   font-weight: 900;
 }
 .brand p {
@@ -172,20 +184,20 @@ a:link, a:visited {
 }
 
 .heading-primary {
-  font-size: var(--font-size-11);
-  font-weight: 900;
-}
-
-.heading-secondary {
   font-size: var(--font-size-10);
   font-weight: 900;
 }
 
+.heading-secondary {
+  font-size: var(--font-size-9);
+  font-weight: 900;
+}
+
 .description {
-  width: 60%;
+  width: 70%;
 }
 .description p {
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-4);
   margin-top: 3rem;
   line-height: 1.6;
 }
@@ -193,12 +205,12 @@ a:link, a:visited {
 .discount-tag h3 {
   margin: auto;
   color: #fff;
-  font-size: var(--font-size-9);
+  font-size: var(--font-size-8);
   font-weight: 900;
 }
 
 .app-screen > h3 {
-  font-size: var(--font-size-8);
+  font-size: var(--font-size-7);
   font-weight: 900;
   margin-top: 1.5rem;
 }
@@ -208,11 +220,12 @@ a:link, a:visited {
 }
 .menu-item-details h4 {
   font-weight: 900;
-  margin-top: 5px;
+  margin-top: 0.8rem;
 }
 .menu-item-details p {
-  font-weight: 300;
-  margin-top: 5px;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: rgba(0, 0, 0, 0.8);
 }
 .menu-item-details-1 h3 {
   font-size: 2rem;
@@ -242,27 +255,29 @@ a:link, a:visited {
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 2rem;
+  line-height: 1.5;
+  color: #000;
 }
 
 .clock h5 {
-  font-size: var(--font-size-3);
+  font-size: 1.4rem;
   font-weight: 900;
   margin-left: 5px;
 }
 
 .contact-us h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .contact-us a {
   font-size: var(--font-size-5);
 }
 
 .links-group h3 {
-  font-size: var(--font-size-8);
+  font-size: var(--font-size-7);
   font-weight: 900;
 }
 .links-group > p, .links-group > a {
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-2);
 }
 
 header {
@@ -299,7 +314,11 @@ header {
 }
 .food-categories-1 button {
   padding: 1rem 1.2rem;
-  margin: 0 1rem;
+  margin-right: 2rem;
+}
+
+.food-icons {
+  width: 3rem;
 }
 
 .header-image {
@@ -308,6 +327,8 @@ header {
 .header-image img {
   width: 55rem;
   justify-self: end;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
 }
 
 .section-1 {
@@ -328,6 +349,8 @@ header {
 .menu-item-image-1 {
   width: 20rem;
   margin-top: -50%;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
 }
 
 .section-2 {
@@ -339,6 +362,8 @@ header {
 
 .pasta-image {
   position: relative;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
 }
 .pasta-image img {
   width: 40rem;
@@ -366,7 +391,7 @@ header {
 }
 
 .app-download-links {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .download-button {
@@ -423,6 +448,7 @@ header {
 }
 .menu-button-2 img {
   height: 1.5rem;
+  cursor: pointer;
 }
 
 .menu-item-type-2 {
@@ -437,15 +463,21 @@ header {
 .menu-item-image-2 {
   width: 10rem;
   margin-top: -50%;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
 }
 
 .menu-item-image-horizontal {
   width: 10rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
 }
 
 .menu-item-image-vertical {
   margin-top: 1rem;
   width: 25rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
 }
 
 .navigation-buttons {
@@ -469,13 +501,13 @@ header {
   filter: invert(1);
 }
 
+.heading-with-time,
 .clock {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 4px;
-  right: 0;
+  justify-content: space-between;
 }
+
 .clock img {
   width: 1.2rem;
 }
@@ -528,8 +560,9 @@ footer {
   border-bottom: 1px solid #000;
 }
 .contact-us a {
+  text-align: center;
   border-top-left-radius: 0;
-  padding: 1.5rem 4.5rem;
+  padding: 1.5rem;
   color: #fff;
   width: 20rem;
   justify-self: end;
@@ -554,7 +587,8 @@ footer {
   margin: 0.5rem 0;
 }
 
-.copyright a:link, .copyright a:visited {
+.copyright a:link,
+.copyright a:visited {
   padding-bottom: 1px;
   padding: 1px;
   border-bottom: 1px solid #000;
@@ -569,6 +603,11 @@ footer {
   color: #fff;
 }
 
+@media (min-width: 1600px) {
+  html {
+    font-size: 75%;
+  }
+}
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -592,12 +631,12 @@ footer {
   html {
     font-size: 50%;
     --font-size-1: 1.2rem;
-    --font-size-2: 1.4rem;
-    --font-size-3: 1.6rem;
+    --font-size-2: 1.5rem;
+    --font-size-4: 1.6rem;
   }
 
   .brand h4 {
-    font-size: var(--font-size-10);
+    font-size: var(--font-size-9);
   }
 
   .food-icons {
@@ -639,7 +678,7 @@ footer {
   }
 
   .section-1 {
-    margin-bottom: 15rem;
+    margin-bottom: 16rem;
   }
 
   .pasta-image {
@@ -649,7 +688,7 @@ footer {
   .section-3 {
     justify-items: center;
     row-gap: 5rem;
-    margin: 10rem auto 0;
+    margin: 12rem auto 0;
   }
 
   .app-download {
@@ -657,9 +696,6 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-  .app-download-links {
-    margin-top: 4rem;
   }
 
   .download-button {
@@ -671,12 +707,25 @@ footer {
     grid-row-start: 2;
   }
 
+  .app-screenshots {
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
   .app-screen {
-    margin: 10rem 0;
-    transform: scale(1.3);
+    margin-top: 12rem;
+    transform: scale(1.4);
   }
   .app-screen:last-of-type {
-    display: none;
+    margin-top: 28rem;
+  }
+
+  .menu-item-card-1 {
+    transform: scale(1.1);
+    margin: 2rem 0 0;
+  }
+  .menu-item-card-1:first-of-type {
+    margin-right: 5rem;
   }
 }
 @media (max-width: 850px) {
@@ -699,7 +748,7 @@ footer {
 
   .links-group-2,
 .links-group-4 {
-    justify-self: end;
+    justify-self: center;
   }
 }
 @media (max-width: 750px) {
@@ -751,9 +800,10 @@ footer {
   html {
     font-size: 40%;
     --font-size-1: 1.8rem;
-    --font-size-3: 2rem;
-    --font-size-10: 4rem;
-    --font-size-11: 6rem;
+    --font-size-2: 2rem;
+    --font-size-4: 2.2rem;
+    --font-size-9: 4rem;
+    --font-size-10: 6rem;
   }
 
   .food-icons {
@@ -783,8 +833,7 @@ footer {
   }
   .contact-us a {
     width: 90%;
-    text-align: center;
-    font-size: var(--font-size-1);
+    font-size: var(--font-size-2);
     padding: 2rem;
   }
 }
@@ -792,12 +841,8 @@ footer {
   html {
     font-size: 35%;
   }
-
-  .menu-item-card-1 {
-    margin: 0 1rem;
-  }
 }
-@media (max-width: 320px) {
+@media (max-width: 330px) {
   html {
     font-size: 30%;
   }

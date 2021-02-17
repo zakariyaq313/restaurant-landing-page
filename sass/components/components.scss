@@ -36,10 +36,6 @@
     }
 }
 
-.food-icons {
-    width: 3rem;
-}
-
 .menu-items-column{
     display: flex;
     justify-content: space-between;
@@ -74,18 +70,10 @@
 }
 
 .like-button{
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .1);
     border-radius: 100%;
     line-height: 0;
     transition: all .2s;
-
-    &:hover{
-        background-color: #000000;
-    }
-
-    &:hover > img{
-        filter: invert(1);
-    }
 
     &-1{
         padding: 1rem;
@@ -104,6 +92,16 @@
         img{
             width: 1.5rem;
         }
+    }
+}
+
+.like-button-hover{
+    &:hover{
+        background-color: #000;
+    }
+
+    &:hover > img{
+        filter: invert(1);
     }
 }
 
