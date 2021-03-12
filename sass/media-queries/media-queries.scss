@@ -115,7 +115,7 @@
         transform: scale(1.4);
 
         &:last-of-type{
-            margin-top: 28rem;
+            display: none;
         }
     }
 
@@ -198,13 +198,13 @@
         padding: 0;
     }
 
+    .download-button{
+        width: 24rem;
+    }
+
     footer {
         padding: 10rem 5rem;
     }
-}
-
-@media(max-width: 550px) {
-
 }
 
 @media(max-width: 450px) {
@@ -230,8 +230,16 @@
         width: 50rem;
     }
 
+    .section-3{
+        padding: 0;
+    }
+
+    .app-download p{
+        padding: 0 5rem;
+    }
+
     .app-screen {
-        margin: 20rem 0 16rem;
+        margin: 20rem 0 10rem;
         transform: scale(1.7);
     }
 

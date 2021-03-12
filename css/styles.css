@@ -717,7 +717,7 @@ footer {
     transform: scale(1.4);
   }
   .app-screen:last-of-type {
-    margin-top: 28rem;
+    display: none;
   }
 
   .menu-item-card-1 {
@@ -792,6 +792,10 @@ footer {
     padding: 0;
   }
 
+  .download-button {
+    width: 24rem;
+  }
+
   footer {
     padding: 10rem 5rem;
   }
@@ -819,8 +823,16 @@ footer {
     width: 50rem;
   }
 
+  .section-3 {
+    padding: 0;
+  }
+
+  .app-download p {
+    padding: 0 5rem;
+  }
+
   .app-screen {
-    margin: 20rem 0 16rem;
+    margin: 20rem 0 10rem;
     transform: scale(1.7);
   }
 
