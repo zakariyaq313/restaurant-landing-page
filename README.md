@@ -1,7 +1,7 @@
 # **Restaurant Landing Page**
 
-A clean and modern Restaurant Landing Page ✨
+![Screenshot](images/preview.png)
 
-<br>
+**Notes -**
 
-<kbd><a href="https://zakariyaq313.github.io/restaurant-landing-page/"><img src="images/preview.png"></a></kbd>
+A modern landing page of a restaurant, based on a [Dribbble design](https://dribbble.com/shots/12998351-Food-Mobile-APP-Landing-UX-UI-Design) by Ghulam Rasool. I created this project to test my skills of replicating a design image into a live HTML/CSS website. Though there is room for improvement, this is an old project now, hence I won't be updating it anymore.
